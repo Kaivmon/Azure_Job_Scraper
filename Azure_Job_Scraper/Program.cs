@@ -24,12 +24,7 @@ namespace Basic_Web_Crawler {
 
         private static async Task startCrawlerAsync() {
 
-            SqlConnection myConnection = new SqlConnection("user id=username;" +
-                                               "password=password;" +
-                                               "server=(localdb)\\MSSQLLocalDB;" +
-                                               "Trusted_Connection=yes;" +
-                                               "database=Web_Crawler; " +
-                                               "connection timeout=30");
+            SqlConnection myConnection = new SqlConnection(Environment.GetEnvironmentVariable("SQLCONNSTR_AzureJobScraperDB"));
             try {
                 myConnection.Open();
             }
