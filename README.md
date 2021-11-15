@@ -1,2 +1,2 @@
 # Azure_Job_Scraper
-A simple job search application that consolidates job search information into a sql db
+An improvement on my original web crawler, this version uses an azure-hosted web application, along with an azure-hosted SQL db.
